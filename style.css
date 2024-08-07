@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .controls {
+    height: auto;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  .controls h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #343a40;
+  }
+  
+  .Draw,
+  .Clear,
+  .radius,
+  .search {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    border: none;
+    color: #495057;
+    background-color: #e9ecef;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #ced4da;
+  }
+  
+  button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .radius {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .radius p {
+    font-size: 14px;
+    color: #495057;
+    margin: 0 0 10px;
+  }
+  
+  .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #e9ecef;
+    height: 6px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #radiusValue {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  

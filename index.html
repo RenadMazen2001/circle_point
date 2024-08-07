@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Draw Icons on Map with ArcGIS API for JavaScript</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://js.arcgis.com/4.29/"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+    <div class="controls">
+      <h2>Map Tools</h2>
+      <div class="Draw">
+        <button id="drawPoint">Draw Point</button>
+        <button id="drawCircle">Draw Circle</button>
+      </div>
+      <div class="radius">
+        <p><b>Circle Radius:</b></p>
+        <input
+          class="slider"
+          type="range"
+          id="radiusSlider"
+          min="1"
+          max="8000"
+          value="100"
+          step="1"
+        />
+        <span id="radiusValue">100km</span>
+      </div>
+      <div class="pointSize">
+        <p><b>Point Size:</b></p>
+        <input
+          class="slider"
+          type="range"
+          id="pointSizeSlider"
+          min="5"
+          max="50"
+          value="12"
+          step="1"
+        />
+        <span id="pointSizeValue">12px</span>
+      </div>
+      <div class="search">
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="Clear">
+        <button id="clearPoints">Clear Points</button>
+        <button id="clearCircles">Clear Circles</button>
+      </div>
+    </div>
+  </body>
+</html>
